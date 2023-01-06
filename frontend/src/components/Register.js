@@ -67,7 +67,7 @@ const Register = () => {
         <div className="row">
           <div className="mb-3 col-lg-6 col-md-6 col-12">
             <label htmlFor="exampleInputEmail1" className="form-label">
-              user
+              User
             </label>
             <input
               type="text"
@@ -94,7 +94,7 @@ const Register = () => {
           </div>
           <div className="mb-3 col-lg-6 col-md-6 col-12">
             <label htmlFor="exampleInputPassword1" className="form-label">
-              fullname
+              Fullname
             </label>
             <input
               type="text"
@@ -107,7 +107,7 @@ const Register = () => {
           </div>
           <div className="mb-3 col-lg-6 col-md-6 col-12">
             <label htmlFor="exampleInputPassword1" className="form-label">
-              mother_name
+              Mother_name
             </label>
             <input
               type="text"
@@ -120,7 +120,7 @@ const Register = () => {
           </div>
           <div className="mb-3 col-lg-6 col-md-6 col-12">
             <label htmlFor="exampleInputPassword1" className="form-label">
-              products
+              Products
             </label>
             <input
               type="text"
@@ -133,7 +133,7 @@ const Register = () => {
           </div>
           <div className="mb-3 col-lg-6 col-md-6 col-12">
             <label htmlFor="exampleInputPassword1" className="form-label">
-              hobbies
+              Hobbies
             </label>
             <input
               type="text"
@@ -146,7 +146,7 @@ const Register = () => {
           </div>
           <div className="mb-3 col-lg-6 col-md-6 col-12">
             <label htmlFor="exampleInputPassword1" className="form-label">
-              state
+              State
             </label>
             <input
               type="text"
@@ -159,7 +159,7 @@ const Register = () => {
           </div>
           <div className="mb-3 col-lg-6 col-md-6 col-12">
             <label htmlFor="exampleInputPassword1" className="form-label">
-              city
+              City
             </label>
             <input
               name="city"

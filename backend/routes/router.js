@@ -4,10 +4,6 @@ const users = require("../models/usermodel");
 
 
 
-// router.get("/",(req,res)=>{
-//     console.log("connect");
-// });
-
 // register user
 
 router.post("/register",async(req,res)=>{

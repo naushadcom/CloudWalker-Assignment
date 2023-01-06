@@ -7,7 +7,7 @@ const Navbaar = () => {
         <header>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
-                    <NavLink className="navbar-brand" to="/">CRUD APP</NavLink>
+                    <h1><NavLink className="navbar-brand" to="/">CLOUDWALKAR</NavLink></h1>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -18,10 +18,7 @@ const Navbaar = () => {
                             </li>
                           
                         </ul>
-                        <form className="d-flex">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className ="btn btn-outline-success" type ="submit">Search</button>
-                        </form>
+                        <h5>CRUD APP</h5>
                     </div>
                 </div>
             </nav>

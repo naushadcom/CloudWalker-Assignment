@@ -20,14 +20,14 @@ router.post("/register",async(req,res)=>{
 
     try {
         
-        const preuser = await users.findOne({email:email});
+        const preuser = await users.findOne({user:user});
         console.log(preuser);
 
         if(preuser){
             res.status(422).json("this is user is already present");
         }else{
             const adduser = new users({
-                user,DOB, fullname ,mother_name,products,hobbies,state,city,Postal_code,
+                user,DOB, fullname ,mother_name,products,hobbies,state,city,Postal_code
             });
 
             await adduser.save();

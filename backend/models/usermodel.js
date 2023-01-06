@@ -50,10 +50,6 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    work: {
-        type: String,
-        required: true
-    },
     products: {
         type: String,
         required: true

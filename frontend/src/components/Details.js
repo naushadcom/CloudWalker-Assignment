@@ -80,16 +80,15 @@ const Details = () => {
                     <div className="row">
                         <div className="left_view col-lg-6 col-md-6 col-12">
                             <img src="/profile.png" style={{ width: 50 }} alt="profile" />
-                            <h3 className="mt-3">Name: <span >{getuserdata.name}</span></h3>
-                            <h3 className="mt-3">Age: <span >{getuserdata.age}</span></h3>
-                            <p className="mt-3"><MailOutlineIcon />Email: <span>{getuserdata.email}</span></p>
-                            <p className="mt-3"><WorkIcon />Occuption: <span>{getuserdata.work}</span></p>
-                        </div>
-                        <div className="right_view  col-lg-6 col-md-6 col-12">
-
-                            <p className="mt-5"><PhoneAndroidIcon />mobile: <span>+91 {getuserdata.mobile}</span></p>
-                            <p className="mt-3"><LocationOnIcon />location: <span>{getuserdata.add}</span></p>
-                            <p className="mt-3">Description: <span>{getuserdata.desc}</span></p>
+                            <h3 className="mt-3">User: <span >{getuserdata.user}</span></h3>
+                            <h3 className="mt-3">DOB: <span >{getuserdata.DOB}</span></h3>
+                            <p className="mt-3"><MailOutlineIcon />Fullname: <span>{getuserdata.fullname}</span></p>
+                            <p className="mt-3"><WorkIcon />Mother Name: <span>{getuserdata.mother_name}</span></p>
+                            <p className="mt-3"><WorkIcon />products: <span>{getuserdata.products}</span></p>
+                            <p className="mt-3"><WorkIcon />hobbies: <span>{getuserdata.hobbies}</span></p>
+                            <p className="mt-3"><WorkIcon />state: <span>{getuserdata.state}</span></p>
+                            <p className="mt-3"><WorkIcon />city: <span>{getuserdata.city}</span></p>
+                            <p className="mt-3"><WorkIcon />Postal_code: <span>{getuserdata.Postal_code}</span></p>
                         </div>
                     </div>
 

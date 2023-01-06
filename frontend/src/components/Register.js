@@ -34,41 +34,24 @@ const Register = () => {
     e.preventDefault();
 
     const {
-      user,
-      DOB,
-      fullname,
-      mother_name,
-      products,
-      hobbies,
-      state,
-      city,
-      Postal_code,
+      user,DOB,fullname,mother_name,products,hobbies,state,city,Postal_code,
     } = inpval;
 
-    const res = await fetch("https://crudappreactjs.herokuapp.com/register", {
-      mode: "no-cors",
+    const res = await fetch("https://cloudwalker.onrender.com/register", {
       method: "POST",
-      headers: {
+      header: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        user,
-        DOB,
-        fullname,
-        mother_name,
-        products,
-        hobbies,
-        state,
-        city,
-        Postal_code,
+        user,DOB,fullname,mother_name,products,hobbies,state,city,Postal_code,
       }),
     });
 
-    const data = await res.json();
+    const data =  res.json();
     // console.log(data);
 
     if (res.status === 422 || !data) {
-    //   console.log("error ");
+      console.log("error ");
       alert("error");
     } else {
       naviagte("/");
@@ -161,7 +144,7 @@ const Register = () => {
               id="exampleInputPassword1"
             />
           </div>
-          <div className="mb-3 col-lg-12 col-md-12 col-12">
+          <div className="mb-3 col-lg-6 col-md-6 col-12">
             <label htmlFor="exampleInputPassword1" className="form-label">
               state
             </label>
@@ -171,12 +154,10 @@ const Register = () => {
               onChange={setdata}
               name="state"
               className="form-control"
-              id=""
-              cols="30"
-              rows="5"
+              id="exampleInputPassword1"
             ></input>
           </div>
-          <div className="mb-3 col-lg-12 col-md-12 col-12">
+          <div className="mb-3 col-lg-6 col-md-6 col-12">
             <label htmlFor="exampleInputPassword1" className="form-label">
               city
             </label>
@@ -185,12 +166,10 @@ const Register = () => {
               value={inpval.city}
               onChange={setdata}
               className="form-control"
-              id=""
-              cols="30"
-              rows="5"
+              id="exampleInputPassword1"
             ></input>
           </div>
-          <div className="mb-3 col-lg-12 col-md-12 col-12">
+          <div className="mb-3 col-lg-6 col-md-6 col-12">
             <label htmlFor="exampleInputPassword1" className="form-label">
               Postal_code
             </label>
@@ -199,9 +178,7 @@ const Register = () => {
               value={inpval.Postal_code}
               onChange={setdata}
               className="form-control"
-              id=""
-              cols="30"
-              rows="5"
+              id="exampleInputPassword1"
             ></input>
           </div>
 

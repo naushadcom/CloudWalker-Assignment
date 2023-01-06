@@ -8,7 +8,6 @@ import { updatedata } from './context/ContextProvider'
 
 // user,
 // DOB, 
-// lastacessIP,
 // fullname ,
 // mother_name,
 // products,
@@ -85,18 +84,18 @@ const Home = () => {
             {
                 udata ?
                     <>
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <div className="alert alert-success alert-dismissible fade show" role="alert">
                             <strong>{udata.user}</strong>  added succesfully!
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     </> : ""
             }
             {
                 updata ?
                     <>
-                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <div className="alert alert-success alert-dismissible fade show" role="alert">
                             <strong>{updata.user}</strong>  updated succesfully!
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     </> : ""
             }
@@ -104,9 +103,9 @@ const Home = () => {
             {
                 dltdata ?
                     <>
-                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <div className="alert alert-danger alert-dismissible fade show" role="alert">
                             <strong>{dltdata.user}</strong>  deleted succesfully!
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     </> : ""
             }
@@ -118,9 +117,10 @@ const Home = () => {
                         <NavLink to="/register" className="btn btn-primary">Add data</NavLink>
                     </div>
 
-                    <table class="table">
+                    <table className="table">
                         <thead>
                             <tr className="table-dark">
+                                <th scope="col">id</th>
                                 <th scope="col">User</th>
                                 <th scope="col">DOB</th>
                                 <th scope="col">Fullname </th>
@@ -130,6 +130,7 @@ const Home = () => {
                                 <th scope="col">State</th>
                                 <th scope="col">City</th>
                                 <th scope="col">Postal_code</th>
+                                <th scope="col"></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -139,7 +140,7 @@ const Home = () => {
                                     return (
                                         <>
                                             <tr>
-                                                <th scope="row">{id + 1}</th>
+                                                {/* <th scope="row">{id + 1}</th> */}
                                                 <td>{element.user}</td>
                                                 <td>{element.DOB}</td>
                                                 <td>{element.fullname}</td>

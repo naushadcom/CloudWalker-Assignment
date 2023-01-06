@@ -12,9 +12,9 @@ const users = require("../models/usermodel");
 
 router.post("/register",async(req,res)=>{
     // console.log(req.body);
-    const {name,email,age,mobile,work,add,desc} = req.body;
+    const {user,DOB, fullname ,mother_name,products,hobbies,state,city,Postal_code,} = req.body;
 
-    if(!name || !email || !age || !mobile || !work || !add || !desc){
+    if(!user || !DOB|| !fullname|| !mother_name|| !products|| !hobbies|| !state|| !city|| !Postal_code){
         res.status(422).json("plz fill the data");
     }
 
@@ -27,7 +27,7 @@ router.post("/register",async(req,res)=>{
             res.status(422).json("this is user is already present");
         }else{
             const adduser = new users({
-                name,email,age,mobile,work,add,desc
+                user,DOB, fullname ,mother_name,products,hobbies,state,city,Postal_code,
             });
 
             await adduser.save();
